@@ -12,6 +12,6 @@ module.exports = function (gulp, plugins) {
 				]
 			})
 			]))
-		.pipe(gulp.dest('public/img'))
+		.pipe(gulp.dest('pages/index/img'))
 	};
 };

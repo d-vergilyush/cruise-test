@@ -1,0 +1,16 @@
+@mixin badge($color: #f20542)
+
+	width: 0px
+	height: 0px
+	border-right: 45px solid $color
+	border-top: 80px solid $color
+	border-left: 45px solid $color
+	border-bottom: 20px solid transparent
+
+.badge
+	&_bestseller
+		@include badge(#33c7fd)
+	&_discount
+		@include badge(#f20542)
+	&_action
+		@include badge(#e30613)

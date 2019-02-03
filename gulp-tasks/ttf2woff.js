@@ -1,7 +1,7 @@
 module.exports = function (gulp, plugins, src) {
     return function () {
-        gulp.src('public/fonts/**/*.ttf')
+        gulp.src('pages/index/fonts/**/*.ttf')
             .pipe(plugins.ttf2woff())
-            .pipe(gulp.dest('public/fonts'));
+            .pipe(gulp.dest('pages/index/fonts'));
     };
 };
