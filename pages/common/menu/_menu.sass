@@ -1,0 +1,22 @@
+.menu
+  display: flex
+  justify-content: space-between
+
+  &__item
+    // margin-right: 30px
+    text-decoration: none
+    text-transform: uppercase
+    font-family: $Raleway
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 20px
+    color: $accent
+    transition: all .3s ease
+    border-bottom: 1px solid transparent
+    @media (max-width: 576px)
+      font-size: 12px
+    &:hover
+      border-bottom: 1px solid #C4C4C4
+      line-height: 20px
+  &__

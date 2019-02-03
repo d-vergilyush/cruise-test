@@ -1,0 +1,46 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "interface"
+@import "helpers"
+
+@import "../header/header"
+@import "../footer/footer"
+
+
+
+::placeholder
+  color: $wt
+::selection
+  background-color: $accent
+  color: $wt
+
+*
+  font-family: $Raleway
+  margin: 0
+  outline: none
+  box-sizing: border-box
+  -webkit-tap-highlight-color: transparent !important
+
+.body
+  &_no-scroll
+    overflow-y: hidden
+
+body
+  margin: 0
+  padding: 0
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  font-family: $default-font
+  overflow-x: hidden
+
+.container
+  @media (min-width: $xl)
+    max-width: 1140px
+  @media (min-width: $lg)
+    max-width: 960px
+  @media (min-width: $md)
+    max-width: 720px
+  @media (min-width: $sm)
+    max-width: 540px
