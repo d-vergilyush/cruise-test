@@ -33,14 +33,15 @@ body
   min-width: 320px
   position: relative
   font-family: $default-font
+  color: $dark
   overflow-x: hidden
 
 .container
-  @media (min-width: $xl)
-    max-width: 1140px
-  @media (min-width: $lg)
+  margin: 0 auto
+  max-width: 1140px
+  @media (max-width: $lg)
     max-width: 960px
-  @media (min-width: $md)
+  @media (max-width: $md)
     max-width: 720px
-  @media (min-width: $sm)
+  @media (max-width: $sm)
     max-width: 540px

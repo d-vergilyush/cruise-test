@@ -1,0 +1,41 @@
+$width: 22px
+$height: 16px
+$line-size: 2px
+$color: $dark
+.burger
+  position: relative
+  width: $width
+  height: $height
+  cursor: pointer
+  span, span:after, span:before
+    background-color: $color
+    width: 100%
+    height: $line-size
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+  span:after, span:before
+    content: ""
+    position: absolute
+    left: 0
+  span:before
+    top: ($height - $line-size) / 2
+  span:after
+    top: $height - $line-size
+  span
+    position: relative
+    display: block
+  &.on span
+    background-color: transparent
+  &.on span:before
+    width: 100%
+    top: 4.34px
+
+    transform: rotate(45deg) translate(-#{($width / 28)}, 0px)
+  &.on span:after
+    width: 100%
+    transform: rotate(-45deg) translate(#{$width / 28 * 6}, -#{$width / 28 * 7})
+  @media only screen and (max-width : 480px)
+    // top: 30px
+
+
