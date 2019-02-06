@@ -5,7 +5,7 @@
 	padding: 20px
 	@media(max-width: $sm)
 		flex-direction: column
-		//
+		padding: 10px
 
 	&__gallery
 		display: flex
@@ -14,8 +14,9 @@
 		@media(max-width: $lg)
 			width: 282px
 		@media(max-width: $sm)
-			order: 1
-			width: 100%
+			// order: 1
+			// width: 100%
+			display: none
 		&-main
 			height: 240px
 			width: 100%
@@ -24,6 +25,7 @@
 			@media(max-width: $lg)
 				margin-bottom: 5px
 				height: 188px
+
 
 		&-grid
 			height: 55px
@@ -64,15 +66,10 @@
 		align-items: flex-start
 		padding: 0 0 0 30px
 		width: calc(100% - 360px)
-		// @media(max-width: $lg)
-		// 	height: 236px
-		// @media (max-width: $md)
-		// 	padding: 30px 8px 38px 22px
-		// 	height: 260px
 		@media(max-width: $sm)
 			width: 100%
 			padding: 0
-			margin-bottom: 20px
+			margin-bottom: 0
 	&__title
 		display: flex
 		margin-bottom: 35px
@@ -90,14 +87,10 @@
 		line-height: 24px
 		@media(max-width: $sm)
 			line-height: 18px
+			margin-bottom: 20px
 		&-p
 			&:not(:last-of-type)
 				margin-bottom: 10px
-		@media (max-width: $lg)
-			//
-		@media (max-width: $md)
-			//
-
 		&_bold
 			font-weight: 700
 	&__price
@@ -118,3 +111,5 @@
 			font-weight: 400
 			text-decoration: line-through
 			color: rgba($dark, 0.55)
+	&__btn
+		//

@@ -2,9 +2,7 @@ module.exports = function (gulp, plugins) {
 	return function () {
 
 		let deps = [
-			'common/header/header',
 			'common/main/main',
-			'common/common/common',
 			'common/popup/popup',
 			'common/menu/menu',
 			'common/sheet/sheet',

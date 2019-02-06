@@ -6,7 +6,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 	galleryGrid.addEventListener('click', event => {
 		let target = event.target;
-		// console.log(target.classList);
 
 		if(target.classList.contains('jsGalleryItem')) {
 
@@ -22,21 +21,7 @@ window.addEventListener('DOMContentLoaded', function () {
 	});
 
 	function showGalleryItem(n) {
-		// console.log(galleryItem[n].src);
 		galleryMain.src = galleryItem[n].src;
 	};
-
-
-
-
-
-
-
-
-
-	// galleryItem.forEach(function(item) {
-	// 	console.log( item.src );
-	// 	item.src = 'http://cruise.loc/common/catalog/img/abrau.jpg';
-	// });
 
 });
