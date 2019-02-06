@@ -5,6 +5,7 @@ button
 a
     text-decoration: none
     color: inherit
+    font-family: inherit
     font-size: inherit
     font-weight: inherit
     transition: all .3s ease
@@ -19,9 +20,12 @@ ul
     padding: 0
     list-style: none
 
+.fa
+    color: $dark
+
 .btn
     // position: relative
-    padding: 16px 50px
+    padding: 16px 53px
     font-family: $Raleway
     font-size: 14px
     font-weight: 400
@@ -39,49 +43,42 @@ ul
             background-color: $accent-hov
         &:active
             background-color: $accent-act
-    @media (max-width: 992px)
-        width: 200px
-    @media (max-width: 768px)
-        padding: 15px 38px
-        width: 180px
-        font-size: 15px
-        line-height: 15px
-    @media (max-width: 480px)
-        width: 100%
-        background: lighten($accent, 15%)
-    &_active
-        background-color: $wt
-    &_shadow
-        box-shadow: 0px 4px 10px rgba(196, 196, 196, 0.2)
-        @media (max-width: 480px)
-            box-shadow: none
-    &_mr
-        margin-right: 40px
-        @media (max-width: 768px)
-            margin-right: 20px
-        @media (max-width: 480px)
-            margin-right: 0
-            margin-bottom: 20px
-    &_popup
-        display: block
-        margin: 0 auto 20px
-.input
-    &_popup
-        width: 100% !important
+    &_arrow
+        padding: 16px 38px
+        .fa
+            color: $wt
+            font-size: 14px
+            padding-left: 8px
 
 .section
-    &__wrap
-// .row
-//     margin-right: 0
-//     margin-left: 0
-
-    &__svg
-        fill: $accent
-        transition: all .3s ease
-    &:hover &__text
-        color: $accent
-    &:hover &__svg
-        fill: $accent
+    &__title
+        font-family: $RobotoSlab
+        font-size: 36px
+        font-weight: 400
+        margin-bottom: 11px
+        text-align: center
+        @media (max-width: $lg)
+            font-size: 26px
+            margin-bottom: 8px
+.row
+    display: flex
+    // flex-wrap: wrap
+    margin-right: -15px
+    margin-left: -15px
+    
+.col
+    display: flex
+    padding-right: 15px
+    padding-left: 15px
+    // align-items: center
+    // justify-content: center
+    // &__svg
+    //     fill: $accent
+    //     transition: all .3s ease
+    // &:hover &__text
+    //     color: $accent
+    // &:hover &__svg
+    //     fill: $accent
 .triangular-arrow
     margin-left: 7px
     width: 8px
@@ -89,3 +86,27 @@ ul
     fill: $dark
     transform: translateY(-50%)
     // transform: rotate(-90deg)
+.social-icon
+    &:hover
+        background-color: $wt
+        .social-icon__svg
+            fill: $dark
+    &__svg
+        fill: $wt
+        transition: all .3s ease
+        &_vk
+            width: 18px
+            @media (max-width: $md)
+                //
+        &_facebook
+            width: 13px
+            @media (max-width: $md)
+                //
+        &_instagram
+            width: 14px
+            @media (max-width: $md)
+                //
+        &_youtube
+            width: 14px
+            @media (max-width: $md)
+                //

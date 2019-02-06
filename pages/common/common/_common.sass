@@ -38,10 +38,15 @@ body
 
 .container
   margin: 0 auto
-  max-width: 1140px
-  @media (max-width: $lg)
-    max-width: 960px
-  @media (max-width: $md)
-    max-width: 720px
-  @media (max-width: $sm)
+  max-width: calc(100% - 30px)
+  @media (min-width: $xs)
+    max-width: 450px
+  @media (min-width: $sm)
     max-width: 540px
+  @media (min-width: $md)
+    max-width: 720px
+  @media (min-width: $lg)
+    max-width: 960px
+  @media (min-width: $xl)
+    max-width: 1140px
+

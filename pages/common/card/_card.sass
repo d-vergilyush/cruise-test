@@ -1,0 +1,111 @@
+.card
+	position: relative
+	display: flex
+	flex-direction: column
+	background-color: $wt
+	transition: all .3s ease
+	&_lg
+		height: 628px
+	&_md
+		height: 406px
+	&_sm
+		height: 304px
+	@media(max-width: $lg)
+		min-height: 349px
+		height: auto
+	&:not(:last-of-type)
+		margin-bottom: 20px
+		@media(max-width: $lg)
+			margin-bottom: 25px
+	@media(min-width: $lg)
+		&:hover &__title
+			color: $accent-hov
+		&:hover
+			cursor: pointer
+
+
+	&__img-wrap
+		width: 100%
+		overflow: hidden
+		height: calc(100% - 190px)
+		@media(max-width: $lg)
+			height: 272px
+		@media(max-width: $sm)
+			height: 230px
+	&__img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		object-position: center
+	&__body
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		padding: 29px 38px 38px
+		height: 190px
+		@media(max-width: $lg)
+			height: 236px
+		@media (max-width: $md)
+			padding: 30px 8px 38px 22px
+			height: 260px
+		@media(max-width: $sm)
+			height: auto
+	&__title
+		margin-bottom: 12px
+		font-family: $RobotoSlab
+		font-size: 18px
+		font-weight: 400
+		line-height: 1.1
+		transition: all .3s ease
+		color: $accent
+		.fa
+			color: $accent
+			font-size: 14px
+			padding-left: 5px
+		// @media (max-width: $xl)
+		// 	font-size: 12px
+		// 	line-height: 18px
+		// 	min-height: 36px
+		// @media (max-width: $lg)
+		// 	//
+		// @media (max-width: $md)
+		// 	margin-bottom: 14px
+	&__text
+		margin-bottom: 18px
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+		// @media (max-width: $xl)
+		// 	font-size: 11px
+		// 	line-height: 16px
+		@media (max-width: $lg)
+			//
+		@media (max-width: $md)
+			//
+
+		&_bold
+			font-weight: 700
+	&__price
+		font-family: $RobotoSlab
+		font-size: 30px
+		font-weight: 400
+		line-height: 1
+		@media (max-width: $lg)
+			margin-top: auto
+		@media (max-width: $md)
+			font-size: 27px
+		@media (max-width: $sm)
+			font-size: 30px
+		&_old
+			display: inline-block
+			margin-left: 25px
+			font-family: $RobotoSlab
+			font-size: 18px
+			font-weight: 400
+			text-decoration: line-through
+			color: rgba($dark, 0.55)
+			@media (max-width: $md)
+				margin-left: 0
+				font-size: 17px
+			@media (max-width: $sm)
+				font-size: 18px

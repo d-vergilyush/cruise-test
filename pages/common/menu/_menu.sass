@@ -1,22 +1,27 @@
 .menu
   display: flex
-  justify-content: space-between
+  flex-direction: column
+  background-color: $dark
+  padding: 58px 25px 68px
+  width: 420px
+  @media (max-width: $sm)
+    width: 100%
+
 
   &__item
-    // margin-right: 30px
     text-decoration: none
-    text-transform: uppercase
-    font-family: $Raleway
-    font-style: normal
-    font-weight: 300
-    font-size: 14px
-    line-height: 20px
-    color: $accent
+    font-family: $RobotoSlab
+    font-size: 18px
+    font-weight: 400
+    line-height: 1
+    color: $wt
     transition: all .3s ease
-    border-bottom: 1px solid transparent
-    @media (max-width: 576px)
-      font-size: 12px
+    @media (max-width: $sm)
+      font-size: 16px
     &:hover
-      border-bottom: 1px solid #C4C4C4
-      line-height: 20px
-  &__
+      // color: lighten($accent, 20%)
+      color: $accent-act
+    a
+      padding: 15px
+      display: block
+      width: 100%

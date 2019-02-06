@@ -7,8 +7,7 @@ module.exports = function (gulp, plugins) {
 			'common/common/common',
 			'common/popup/popup',
 			'common/menu/menu',
-			'common/up/up',
-			'common/down/down',
+			'common/sheet/sheet',
 		];
 
 		let paths = [];

@@ -1,11 +1,21 @@
-$(document).ready(function () {
-    var popup = $('.popup-wrap');
+window.addEventListener('DOMContentLoaded', function () {
 
-    $('.jsShowCallback').on('click', function () {
-        $('#popup').fadeIn();
-    });
+	const popup = document.querySelector('.popupWrap');
+	const popupClose = document.querySelector('.jsClosePopup');
+	const cards = document.querySelectorAll('.jsShowPopup');
 
-    $('.jsPopupClose').on('click', function () {
-        popup.fadeOut();
-    });
+	const showModal = function() {
+		popup.style.display = 'block';
+		// document.body.style.overflow = 'hidden';
+	};
+
+	cards.forEach(card => {
+		card.addEventListener('click', showModal)
+	});
+
+	popupClose.addEventListener('click', () => {
+		popup.style.display = 'none';
+		// document.body.style.overflow = '';
+	});
+
 });

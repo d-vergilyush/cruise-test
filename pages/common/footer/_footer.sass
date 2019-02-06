@@ -1,0 +1,80 @@
+.footer
+  padding: 29px 0 35px 0
+  background: $wt
+  &__row
+    justify-content: space-between
+    @media (max-width: $sm)
+      flex-direction: column
+      align-items: center
+      justify-content: center
+  &__col
+    @media (max-width: $sm)
+      &:not(:last-child)
+        margin-bottom: 20px
+    &_right
+      flex-direction: column
+  &__nav
+    margin-right: 150px
+    @media (max-width: $lg)
+      margin-right: 75px
+    
+    @media (max-width: $md)
+      display: none
+    &-item
+      font-size: 14px
+      font-weight: 400
+      line-height: 1
+      &:not(:last-child)
+        margin-bottom: 10px
+  &__social
+    @media (max-width: $sm)
+      text-align: center
+    &-label
+      font-size: 14px
+      font-weight: 400
+      line-height: 1
+      margin-bottom: 10px
+    &-wrap
+      width: 150px
+      display: flex
+      justify-content: space-between
+      @media (max-width: $xl)
+        //
+      @media (max-width: $md)
+        //
+      @media (max-width: $md)
+        //
+        // a
+        //   margin-right: 10px
+        //   &:last-of-type
+        //     margin-right: 0
+
+    &-item
+      width: 30px
+      height: 30px
+      background-color: $dark
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all .3s ease
+      &:hover
+          background-color: $wt
+          background-color: rgba($dark, 0.1)
+
+  &__contacts
+    margin-bottom: 11px
+    @media (max-width: $sm)
+      text-align: center
+    &-phone
+      display: block
+      margin-bottom: 11px
+      font-family: Raleway
+      font-size: 14px
+      font-weight: 700
+    &-descr
+      font-size: 10px
+      font-weight: 400
+  &__copyright
+    font-size: 14px
+    font-weight: 400

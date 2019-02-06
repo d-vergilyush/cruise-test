@@ -5,71 +5,35 @@
     z-index: 20
 .underline
     text-decoration: underline
-.center
-    text-align: center
-.title
-    font-family: RobotoSlab, sans-serif
-    font-weight: 600
-    font-size: 48px
-    margin-bottom: 15px
-    color: $accent
-    position: relative
-    @media (max-width: 1400px)
-        font-size: 42px
-        line-height: 45px
-    @media (max-width: 992px)
-        font-size: 38px
-    @media (max-width: 768px)
-        font-size: 34px
-    @media (max-width: 480px)
-        font-size: 28px
-        line-height: 1
-    &_wt
-        color: $wt
-    &_underline
-        position: relative
-        &-left
-            &::after
-                bottom: -40px
-                left: 0
-                width: 108.75px
-                position: absolute
-                height: 2px
-                display: block
-                content: ''
-                background-color: #fff
-                @media (max-width: 768px)
-                    bottom: -20px
-                    width: 70px
-        &-center
-            &::after
-                bottom: -25px
-                left: 50%
-                transform: translateX(-50%)
-                width: 123.62px
-                position: absolute
-                height: 2px
-                display: block
-                content: ''
-                background-color: #fff
-                @media (max-width: 1200px)
-                    width: 14%
-                @media (max-width: 992px)
-                    width: 25%
-                @media (max-width: 768px)
-                    //
-                @media (max-width: 480px)
-                    width: 40%
-                    bottom: -20px
-            &_bl
-                &::after
-                    background-color: $accent
+.clearfix
+    &:after
+        content: ""
+        display: table
+        clear: both
+.hide
+    display: none
+.show
+    display: block !important
+
+.fadeIn
+    animation-name: fadeIn
+    animation-duration: 1s
 
 
+@keyframes fadeIn
+    from
+        opacity: .1
+    to
+        opacity: 1
 
-    // @media (max-width: 992px)
-    //     font-size: 38px
-    // @media (max-width: 768px)
-    //     font-size: 32px
-    // @media (max-width: 576px)
-    //     font-size: 26px
+
+.fadeOut
+    animation-name: fadeOut
+    animation-duration: 1s
+
+
+@keyframes fadeOut
+    from
+        opacity: 1
+    to
+        opacity: .1
