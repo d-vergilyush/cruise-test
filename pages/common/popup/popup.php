@@ -3,7 +3,7 @@
 
 
       <div class="popup__close jsClosePopup">
-        <?php include '/common/icons/cancel.php' ?>
+        <?php include 'common/icons/cancel.php' ?>
       </div>
 
       <div class="sheet">

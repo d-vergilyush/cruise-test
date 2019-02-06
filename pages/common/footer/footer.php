@@ -18,22 +18,22 @@
           <div class="footer__social-wrap">
             <a href="#">
               <div class="footer__social-item social-icon">
-                <?php include "/common/icons/vk.php"?>
+                <?php include "common/icons/vk.php"?>
               </div>
             </a>
             <a href="#">
               <div class="footer__social-item social-icon">
-                <?php include "/common/icons/facebook.php"?>
+                <?php include "common/icons/facebook.php"?>
               </div>
             </a>
             <a href="#">
               <div class="footer__social-item social-icon">
-                <?php include "/common/icons/youtube.php"?>
+                <?php include "common/icons/youtube.php"?>
               </div>
             </a>
             <a href="#">
               <div class="footer__social-item social-icon">
-                <?php include "/common/icons/instagram.php"?>
+                <?php include "common/icons/instagram.php"?>
               </div>
             </a>
           </div>
