@@ -9,21 +9,21 @@
       <div class="sheet">
           <div class="sheet__gallery">
             <div class="sheet__gallery-main sheet__img-wrap">
-              <img class="sheet__img jsGalleryMain" src="/common/catalog/img/abrau.jpg" alt="">
+              <img class="sheet__img jsGalleryMain" src="/common/catalog/img/abrau-1.jpg" alt="">
             </div>
             <div class="sheet__gallery-grid jsGalleryGrid">
 
               <div class="sheet__gallery-item sheet__img-wrap">
+                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/abrau-1.jpg" alt="">
+              </div>
+              <div class="sheet__gallery-item sheet__img-wrap">
                 <img class="sheet__img jsGalleryItem" src="/common/catalog/img/abrau.jpg" alt="">
               </div>
               <div class="sheet__gallery-item sheet__img-wrap">
-                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/gelend.jpg" alt="">
+                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/abrau-2.jpg" alt="">
               </div>
               <div class="sheet__gallery-item sheet__img-wrap">
-                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/novoros.jpg" alt="">
-              </div>
-              <div class="sheet__gallery-item sheet__img-wrap">
-                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/sochi.jpg" alt="">
+                <img class="sheet__img jsGalleryItem" src="/common/catalog/img/abrau-3.jpg" alt="">
               </div>
 
             </div>
