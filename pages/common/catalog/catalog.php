@@ -3,9 +3,9 @@
         <div class="catalog__title section__title">Каталог круизов</div>
         <div class="catalog__sort">Сортировать круизы по цене <i class="fa fa-caret-down" aria-hidden="true"></i></div>
 
-        <div class="catalog__wrap clearfix">
+        <div class="catalog__wrap">
 
-            <div class="card card_lg catalog__item catalog__item_left jsShowPopup">
+            <div class="card card_lg catalog__item jsShowPopup">
                 <div class="badge badge_bestseller"><div class="badge__text">Хит продаж</div></div>
                 <div class="card__img-wrap">
                     <img class="card__img" src="/common/catalog/img/anapa.jpg" alt="">
@@ -21,7 +21,22 @@
                     <div class="card__price">49 000 руб.</div>
                 </div>
             </div>
-            <div class="card card_sm catalog__item catalog__item_right jsShowPopup">
+            <div class="card card_md catalog__item jsShowPopup">
+                <div class="card__img-wrap">
+                    <img class="card__img" src="/common/catalog/img/novoros.jpg" alt="">
+                </div>
+                <div class="card__body">
+                    <div class="card__title">
+                        Морской круиз в&nbsp;Новороссийск&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="card__text">
+                        <span class="card__text_bold">Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи <br>
+                        <span class="card__text_bold">Продолжительность:</span> 13&nbsp;ч.&nbsp;0&nbsp;мин.
+                    </div>
+                    <div class="card__price">14 800 руб.</div>
+                </div>
+            </div>
+            <div class="card card_sm catalog__item jsShowPopup">
                 <div class="badge badge_action"><div class="badge__text">Акция</div></div>
                 <div class="card__img-wrap">
                     <img class="card__img" src="/common/catalog/img/sochi.jpg" alt="">
@@ -37,7 +52,7 @@
                     <div class="card__price">5 000 руб. <span class="card__price_old">15000 руб.</span></div>
                 </div>
             </div>
-            <div class="card card_sm catalog__item catalog__item_right jsShowPopup">
+            <div class="card card_sm catalog__item jsShowPopup">
                 <div class="badge badge_discount"><div class="badge__text">скидка 10%</div></div>
                 <div class="card__img-wrap">
                     <img class="card__img" src="/common/catalog/img/gelend.jpg" alt="">
@@ -53,22 +68,7 @@
                     <div class="card__price">7 000 руб. <span class="card__price_old">10000 руб.</span></div>
                 </div>
             </div>
-            <div class="card card_md catalog__item catalog__item_left jsShowPopup">
-                <div class="card__img-wrap">
-                    <img class="card__img" src="/common/catalog/img/novoros.jpg" alt="">
-                </div>
-                <div class="card__body">
-                    <div class="card__title">
-                        Морской круиз в&nbsp;Новороссийск&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i>
-                    </div>
-                    <div class="card__text">
-                        <span class="card__text_bold">Маршрут:</span> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи <br>
-                        <span class="card__text_bold">Продолжительность:</span> 13&nbsp;ч.&nbsp;0&nbsp;мин.
-                    </div>
-                    <div class="card__price">14 800 руб.</div>
-                </div>
-            </div>
-            <div class="card card_md catalog__item catalog__item_right jsShowPopup">
+            <div class="card card_md catalog__item jsShowPopup">
                 <div class="card__img-wrap">
                     <img class="card__img" src="/common/catalog/img/abrau.jpg" alt="">
                 </div>
